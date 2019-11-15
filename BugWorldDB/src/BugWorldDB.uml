@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_l2MRoLi-EemUGM-WEeo4Gg" name="BugWorldDB">
+    <eAnnotations xmi:id="_mJ5QwLi-EemUGM-WEeo4Gg" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_mJ5Qwbi-EemUGM-WEeo4Gg" source="codegen">
+        <details xmi:id="_mJ5Qwri-EemUGM-WEeo4Gg" key="codegenDirectory" value="/BugWorldDB/src"/>
+        <details xmi:id="_noZ2ILi-EemUGM-WEeo4Gg" key="AssociatedSourceCode" value="/BugWorldDB/src/ButterFly.java;3889019593/1;/BugWorldDB/src/EntryPoint.java;3480717316/1;/BugWorldDB/src/Food.java;4263534796/1;/BugWorldDB/src/LadyBug.java;3984284797/1;/BugWorldDB/src/Plant.java;593897559/1;/BugWorldDB/src/Spider.java;3517665897/1;/BugWorldDB/src/Bug.java;3311185820/1;/BugWorldDB/src/World.java;1355318431/1;/BugWorldDB/src/Thing.java;1901729430/1;"/>
+      </contents>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YcnPILjDEemUGM-WEeo4Gg" name="Bug"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HMptwLjEEemUGM-WEeo4Gg" name="ButterFly"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0NmxMLjAEemUGM-WEeo4Gg" name="Food"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Gqs3QLjEEemUGM-WEeo4Gg" name="LadyBug"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_em4ZALjDEemUGM-WEeo4Gg" name="Plant"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ldfrgLjDEemUGM-WEeo4Gg" name="Spider"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zwZ30LjAEemUGM-WEeo4Gg" name="Thing"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zSnvoLjAEemUGM-WEeo4Gg" name="World"/>
+    <profileApplication xmi:id="_mJ87ILi-EemUGM-WEeo4Gg">
+      <eAnnotations xmi:id="_mKAlgLi-EemUGM-WEeo4Gg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_mKH6QLi-EemUGM-WEeo4Gg" base_Package="_l2MRoLi-EemUGM-WEeo4Gg">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+</xmi:XMI>

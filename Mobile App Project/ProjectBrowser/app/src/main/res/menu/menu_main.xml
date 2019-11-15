@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.projectbrowser.MainActivity">
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menugoback"
+        android:title="Back" />
+    <item
+        android:id="@+id/menuForward"
+        android:title="Forward" />
+    <item
+        android:id="@+id/menuAddbookmark"
+        android:title="Add Bookmark" />
+    <item
+        android:id="@+id/menuListBookMarks"
+        android:title="List BookMarks" />
+    <item
+        android:id="@+id/menuHistory"
+        android:title="History" />
+    <item
+        android:id="@+id/goButton"
+        android:title="Go"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menuReload"
+        android:icon="@drawable/ic_refresh_black_24dp"
+        android:title="Refresh"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuExit"
+        android:title="Close" />
+</menu>

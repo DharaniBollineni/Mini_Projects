@@ -1,0 +1,590 @@
+body{
+	//background-color :#646B6A;
+	//background :rgba(100, 107, 106,0.7);	
+	background-image: url("imagesbg.jpg");
+	color:white;
+	font: 14.9px Arial,sans-serif; 	
+	display: grid;
+	grid-template-areas:
+		"header header header"
+		"sidebar content rnotes"
+		"footer footer footer";
+	grid-template-columns: 200px 3fr 1fr;
+	margin: 20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+@media (max-width: 600px) and (min-width: 416px) {
+	body {
+		background-color: white ;
+		grid-template-areas:
+			"header header"
+			"sidebar content"
+			"rnotes rnotes"
+			"footer footer";
+		grid-template-columns: 200px 1fr;
+	}	
+}
+
+@media (max-width: 415px) {
+	body {
+		background-color: pink;
+		grid-template-areas:
+			"header"
+			"navigation"
+			"content"
+			"rnotes"
+			"footer";
+		grid-template-columns: 1fr;
+	}
+}
+* {box-sizing: border-box}
+
+.singId-content1 {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+div.sideLeft {
+	grid-area: sidebar;
+	border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;	
+	color:white;
+}
+
+header {
+        padding: 10px 20px;
+		background: rgba(153, 0, 0, 0.6);
+        //background: #993300; 
+		grid-area: header;
+		border-style: solid;
+		border-width:1px;
+		border-color: #F0B27A ;
+		color:white;
+    }
+p:nth-of-type(5n) {
+  color: lime;
+}
+
+
+div.middlecontent{
+	padding: 20px 20px;
+	grid-area: content;
+	border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;	
+}
+#singupformtable{
+	border-style: solid;
+	border-width:2px;
+	background: rgba(153, 0, 0, 0.1);
+	border-color: #F0B27A ;
+	//background-color: #882813;
+	text-align:center;	
+	width:500px;
+	height:600px;	
+}
+#tablesignup
+{
+	padding: 20px 20px;
+}
+
+.newsID{
+	border-color: yellow;
+	border-style: solid;
+	border-width:1px;
+}
+div.sideRight{
+	grid-area: rnotes;
+	display: flex;
+	flex-direction: column;
+	height:1000px;	
+}
+
+#box1 {
+	flex: 200px 1;
+	column-count: 3;
+	border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;
+	padding: 10px 10px;	
+}
+
+#box2 {
+	flex: 20;
+	border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;
+	padding: 10px 10px;
+}
+
+#box3 {
+	flex: 3;
+	border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;
+	padding: 3px 10px;
+}
+
+#box3image{
+	border-radius: 50%;
+	text-align:center;
+	padding: 3px 3px;
+	height:150px;
+	width:150px;
+	
+}
+
+.fleximageclass1{
+	text-align:center;
+	padding: 3px 3px;
+	height:70px;
+	width:50%;
+	float: right;
+	border-radius: 10px;
+	opacity: 1;
+}
+
+nav {
+	height:50px;
+	width: 100%;
+	margin-left: -8px;
+}
+nav > ul > li::after{
+	content:"|";
+}
+nav > ul > li:last-of-type::after{
+	content:none;
+}
+nav > ul > li {
+	list-style-type: none;
+	float: left;
+	margin: 20px 5px;
+	
+}
+
+nav > ul > li > ul  {
+	display: none;
+	background: rgba(153, 0, 0, 0.6);
+	border: 1px solid #F0B27A;
+	width:150px;
+	
+	cursor:pointer;
+		
+}
+nav > ul > li > ul>li  {
+	height:25px;
+	
+}
+nav > ul > li:hover > ul {
+	display: block;
+	position:absolute;
+}
+li{
+	list-style-type:none;	
+}
+
+
+
+a {
+	transition: color 1s;
+}
+a:link {
+	font-weight: bold;
+	
+}
+a:visited {
+	color: orange;
+}
+
+a:hover {
+	color: aqua;
+}
+.navClass1{
+	background-color: coral;
+	font-family: Arial;
+	
+}
+.feedbacktextarea
+{
+	background: #f2f2f2; 
+    /*background-color: rgb(255, 128, 255);
+	background-color: hsla(120, 100%, 50%, 0.5);*/
+		
+}
+
+.footerClass1{
+	
+	text-align: center;
+    padding: 5px;	
+	background-color: #F0B27A;
+	border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;	
+	grid-area: footer;
+	opacity: 0.8;
+	animation: flash infinite 5s;
+
+}
+@keyframes flash {
+	0% {
+		background: #66b3ff;
+	}
+	
+	50% 70%{
+		background: #aa80ff;
+	}
+	
+	100% {
+		background: #ff4d4d ;
+	}
+	
+}
+
+.blinkingClass1{
+	animation:blinkingOffer 1.5s infinite;
+	/*background-color:blue;*/
+width:auto;
+	}
+
+@keyframes blinkingOffer{
+    0%{     color: #000;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    60%{    color: transparent;  }
+    70%{   color: #000;    }
+}
+
+/*.container .sideLeft{
+		float: left; 
+        padding: 20px;
+        min-height: 170px;
+        box-sizing: border-box;
+        //background: #f2f2f2; 
+    }*/
+
+#singupId{
+	display:none;
+	text-align: center;
+	grid-area: content;	
+	padding: 100px 100px;
+	
+}
+#SignInId2{
+	display:none;
+	text-align: center;
+	grid-area: content;	
+	
+}
+#uname1{
+	height:30px;
+	width:30px;
+}
+#uname2{
+	height:30px;
+	width:200px;
+	color: black;
+	
+}
+#pword1
+{
+	height:30px;
+	width:40px;
+}
+#pword2
+{
+	height:30px;
+	width:200px;
+	color: black;
+	
+}
+#rpword1
+{
+	height:30px;
+	width:150px;
+}
+#rpword2
+{
+	height:30px;
+	width:200px;
+	color: black;
+	
+}
+#submitNote{
+	display:none;
+}
+#btnRegistersignup:focus {
+  background-color: rgba(160,160,160,0.9);
+}
+
+#btnRegistersignup:hover {
+  color: white;
+  border-color: currentColor;
+  font-weight: bold;
+  background-color: rgba(255,178,102,0.9);
+}
+#btnRegistersignup {
+	background-color: Transparent;	
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+   // outline:none;
+    color: white;
+    border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;
+	background-color: rgba(153, 0, 0, 0.6);
+	height:40px;
+	width:190px;
+	color: white;
+}
+#email1{
+	height:30px;
+	width:40px;
+}
+#email2{
+	height:30px;
+	width:200px;
+	color: black;
+}
+.gallery-item > .caption {
+	display: none;
+	position: relative;
+	background: rgba(64, 64, 64, 0.5);
+	color: white;
+	text-align: justify;		
+	float: right;	
+}
+.gallery-item:hover > .caption {
+	display: inline-block;
+}
+.containersingin {
+  padding: 16px;
+}
+#btnSignIn:focus {
+  background-color: rgba(160,160,160,0.9);
+}
+
+#btnSignIn:hover {
+  color: white;
+  border-color: currentColor;
+  font-weight: bold;
+  background-color: rgba(255,178,102,0.9);
+}
+
+#btnSignUp:focus {
+  background-color: rgba(160,160,160,0.9);
+}
+
+#btnSignUp:hover {
+  color: white;
+  border-color: currentColor;
+  font-weight: bold;
+  background-color: rgba(255,178,102,0.9);
+}
+#btnCancelOrder:focus {
+  background-color: rgba(160,160,160,0.9);
+}
+
+#btnCancelOrder:hover {
+  color: white;
+  border-color: currentColor;
+  font-weight: bold;
+  background-color: rgba(255,178,102,0.9);
+}
+#btnPlaceOrder:focus {
+  background-color: rgba(160,160,160,0.9);
+}
+
+#btnPlaceOrder:hover {
+  color: white;
+  border-color: currentColor;
+  font-weight: bold;
+  background-color: rgba(255,178,102,0.9);
+}
+#btnAddToCart:focus {
+  background-color: rgba(160,160,160,0.9);
+}
+
+#btnAddToCart:hover {
+  color: white;
+  border-color: currentColor;
+  font-weight: bold;
+  background-color: rgba(255,178,102,0.9);
+}
+#btnReserveTable:focus {
+  background-color: rgba(160,160,160,0.9);
+}
+
+#btnReserveTable:hover {
+  color: white;
+  border-color: currentColor;
+  font-weight: bold;
+  background-color: rgba(255,178,102,0.9);
+}
+
+#btnMap:focus {
+  background-color: rgba(160,160,160,0.9);
+}
+
+#btnMap:hover {
+  color: white;
+  border-color: currentColor;
+  font-weight: bold;
+  background-color: rgba(255,178,102,0.9);
+}
+#btnSignUp {
+    background-color: Transparent;
+	
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+   // outline:none;
+    color: white;
+    border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;
+	background-color: rgba(153, 0, 0, 0.6);
+	height:40px;
+	width:120px;
+}
+
+
+#btnSignIn{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+	 color: white;
+	 border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;
+	background-color: rgba(153, 0, 0, 0.6);
+	height:40px;
+	width:120px;
+	 
+   // outline:none;
+}
+
+#btnCancelOrder{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+	 color: white;
+   // outline:none;
+   border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;
+	background-color: rgba(153, 0, 0, 0.6);
+	height:40px;
+	width:120px;
+}
+#btnPlaceOrder{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+	 color: white;
+   // outline:none;
+   border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;
+	background-color: rgba(153, 0, 0, 0.6);
+	height:40px;
+	width:120px;
+}
+
+#btnAddToCart{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+	 color: white;
+    //outline:none;
+	border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;
+	background-color: rgba(153, 0, 0, 0.6);
+	height:40px;
+	width:120px;
+	
+}
+
+#btnReserveTable{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+	 color: white;
+   // outline:none;
+   border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;
+	background-color: rgba(153, 0, 0, 0.6);
+	height:40px;
+	width:120px;
+}
+
+#btnMap{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+	 color: white;
+   // outline:none;
+   border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;
+	background-color: rgba(153, 0, 0, 0.6);
+	height:40px;
+	width:120px;
+	
+}
+
+#newsID{
+	background-color: Transparent;
+    color: white;
+    border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;
+	background-color: rgba(153, 0, 0, 0.6);
+	height:30px;
+	width:100px;
+	text-align:center;
+}
+
+#galleryId{
+	background-color: Transparent;
+    color: white;
+    border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;
+	background-color: rgba(153, 0, 0, 0.6);
+	height:29px;
+	width:100px;
+	text-align:center;
+}
+#adsId{
+	background-color: Transparent;
+    color: white;
+    border-style: solid;
+	border-width:1px;
+	border-color: #F0B27A ;
+	background-color: rgba(153, 0, 0, 0.6);
+	height:29px;
+	width:100px;
+	text-align:center;
+}
